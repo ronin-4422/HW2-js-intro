@@ -14,3 +14,7 @@ console.log('------------- # 5')
 const number = '1 2 3 4 5';
 console.log(number)
 
+console.log('------------- # 6')
+const number = '5 4 3 2 1';
+console.log(number)
+
