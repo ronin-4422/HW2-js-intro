@@ -68,7 +68,7 @@ getDayInfo(6);
 getDayInfo(7);
 
 console.log('------------- # 9');
-const bar = ['a', 'b', 'c'];
+const bar = ["a", "b", "c"];
 bar.push(1, 2, 3);
 console.log(bar);
 
@@ -79,8 +79,26 @@ const c = n.concat(m);
 console.log(c);
 
 console.log('------------- # 11');
-
-function mathProg () {
-  for (let a = 1; a <= 5; a++) 
-console.log(a);
+function calcSum() {
+  let sum = 0;
+  let n = prompt('Введите число(3 или 5)');
+  for (i = 1; i<= n; i++){
+    sum = sum + i;
+  }
+  return sum;
 }
+console.log(calcSum(n))
+// function calcSum() {
+//   let sum = 0;
+//   for (i = 1; i<= 3; i++)
+//   sum = sum + i;
+//   return sum;
+// }
+// console.log(calcSum(3))
+// function calcProg() {
+//   let sum = 0;
+//   for (i = 1; i<= 5; i++)
+//   sum = sum + i;
+//   return sum;
+// }
+// console.log(calcProg(5))
