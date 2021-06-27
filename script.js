@@ -32,30 +32,37 @@ getMarkInfo(1);
 console.log('------------- # 8');
 function getDayInfo(position) {
   switch (position) {
-    case 0:
+    case 0: {
       console.log('Sunday');
       break;
-    case 1:
+    }
+    case 1: {
       console.log('Monday');
       break;
-    case 2:
+    }
+    case 2: {
       console.log('Tuesday');
       break;
-    case 3:
+    }
+    case 3: {
       console.log('Wednsday');
       break;
-    case 4:
+    }
+    case 4: {
       console.log('Thursday');
       break;
-    case 5:
+    }
+    case 5: {
       console.log('Friday');
       break;
-    case 6:
+    }
+    case 6: {
       console.log('Saturday');
       break;
-    case 7:
-      console.log('Wrong data');
-      break;
+    }
+      default: {
+        console.log('Wrong data');
+      }
   }
 }
 getDayInfo(0);
@@ -73,32 +80,34 @@ bar.push(1, 2, 3);
 console.log(bar);
 
 console.log('------------- # 10');
-const n = [1, 2, 3];
+const k = [1, 2, 3];
 const m = [4, 5, 6];
-const c = n.concat(m);
+const c = k.concat(m);
 console.log(c);
 
 console.log('------------- # 11');
-function calcSum() {
-  let sum = 0;
-  let n = prompt('Введите число(3 или 5)');
-  for (i = 1; i<= n; i++){
-    sum = sum + i;
-  }
-  return sum;
+let n = prompt('Введите число (3 или 5)')
+function calcSum(n) {
+    let sum = 0;
+    for ( i = 1;  i<= n;  i++ ) {
+      sum = sum + i;
+   }
+    return sum;
 }
 console.log(calcSum(n))
 // function calcSum() {
 //   let sum = 0;
-//   for (i = 1; i<= 3; i++)
-//   sum = sum + i;
+//   for (i = 1; i<= 3; i++) {
+//     sum = sum + i;
+//   }
 //   return sum;
 // }
 // console.log(calcSum(3))
 // function calcProg() {
 //   let sum = 0;
-//   for (i = 1; i<= 5; i++)
-//   sum = sum + i;
+//   for (i = 1; i<= 5; i++) {
+//     sum = sum + i;
+//   }
 //   return sum;
 // }
 // console.log(calcProg(5))
